@@ -1,0 +1,15 @@
+click==7.1.2
+cmake==3.18.4.post1
+distro==1.5.0
+Flask==1.1.2
+itsdangerous==1.1.0
+Jinja2==2.11.2
+MarkupSafe==1.1.1
+numpy==1.16.6
+opencv-python==3.4.4.19
+packaging==20.8
+pyparsing==2.4.7
+pyzmq==19.0.2
+scikit-build==0.11.1
+Werkzeug==1.0.1
+zmq==0.0.0

@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="centered">
+    {% if display_image %}
+    <div class="row">
+        <div class="col-md-5"> 
+            <div class="image-container">
+                <figure>
+                  <img src="/static/detections/{{display_image}}" style="width:400px;height:250px;">
+<!--                     <img src="{{image_path}}" style="width:400px;height:250px;"> -->
+                </figure>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    {% if msg %}
+    <div class="row">
+        <p style="color:red"> {{msg}}</p>
+    </div>
+    {% endif %}
+    </br>
+
+    <div class="row">
+        <div class="col-md-5">
+            <div class="upload-form">
+                <p><b>Upload another?</b></p>
+                <form action = "/uploader" method = "POST" 
+                          enctype = "multipart/form-data">
+                    <input type = "file" name = "file" />
+                    <input type = "submit"/>
+                </form>
+            </div>      
+        </div>
+    </div>
+</div>
+{% endblock %}
